@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/honeybook-contacts/static/css/main.0814f4e5.chunk.css",
+    "main.js": "/honeybook-contacts/static/js/main.22906993.chunk.js",
+    "main.js.map": "/honeybook-contacts/static/js/main.22906993.chunk.js.map",
+    "runtime~main.js": "/honeybook-contacts/static/js/runtime~main.4d5bd465.js",
+    "runtime~main.js.map": "/honeybook-contacts/static/js/runtime~main.4d5bd465.js.map",
+    "static/js/2.b8b490ab.chunk.js": "/honeybook-contacts/static/js/2.b8b490ab.chunk.js",
+    "static/js/2.b8b490ab.chunk.js.map": "/honeybook-contacts/static/js/2.b8b490ab.chunk.js.map",
+    "index.html": "/honeybook-contacts/index.html",
+    "precache-manifest.f81436892036e415fa01a3ad94db18d7.js": "/honeybook-contacts/precache-manifest.f81436892036e415fa01a3ad94db18d7.js",
+    "service-worker.js": "/honeybook-contacts/service-worker.js",
+    "static/css/main.0814f4e5.chunk.css.map": "/honeybook-contacts/static/css/main.0814f4e5.chunk.css.map"
+  }
+}
