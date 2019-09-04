@@ -30,7 +30,7 @@ export default class ContactItem extends Component {
           </div>
 
           <div className="more-details">
-            <div className="phone">{phone}</div>
+            <div className="phone">Phone number: {phone}</div>
             <div className="email">{email}</div>
           </div>
         </div>
