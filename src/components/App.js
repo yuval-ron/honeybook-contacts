@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Navbar from './Navbar'
 import Loading from './Loading'
 import ContactList from './ContactList'
+import Search from './Search'
 import {fetchContacts} from '../services/api'
 import './App.scss';
 
@@ -31,6 +32,7 @@ class App extends Component {
           :
           <Loading />
         }
+        <Search />
       </div>
     );
   }

@@ -1,9 +1,10 @@
 $navbarHeight: 60px;
+$appColor: #536dfe;
 
 .App {
   #navbar-container {
     height: $navbarHeight;
-    background-color: #536dfe;
+    background-color: $appColor;
     color: white;
     display: flex;
     justify-content: center;
