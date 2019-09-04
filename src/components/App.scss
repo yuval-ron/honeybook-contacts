@@ -2,13 +2,20 @@ $navbarHeight: 60px;
 $appColor: #536dfe;
 
 .App {
+  padding-top: $navbarHeight;
+
   #navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     height: $navbarHeight;
     background-color: $appColor;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     .app-logo {
       color: white;
