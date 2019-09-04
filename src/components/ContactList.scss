@@ -1,0 +1,15 @@
+#contacts-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 96%;
+  margin: auto;
+
+  .contact-item-container {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: red;
+  }
+}
