@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import {debounce} from 'lodash'
 
 import Navbar from './Navbar'
 import Loading from './Loading'
-import ContactList from './ContactList'
-import Search from './Search'
-import {fetchContacts} from '../services/api'
-import './App.scss';
+import ContactList from '../../contacts/components/ContactList'
+import Search from '../../contacts/components/Search'
+import {fetchContacts} from '../../services/api'
+import './App.scss'
 
 class App extends Component {
   state = {
