@@ -1,20 +1,19 @@
 $navbarHeight: 60px;
 
 .App {
-  text-align: center;
-}
-
-#navbar-container {
-  height: $navbarHeight;
-  background-color: #536dfe;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .app-logo {
+  #navbar-container {
+    height: $navbarHeight;
+    background-color: #536dfe;
     color: white;
-    font-size: 28px;
-    font-family: 'Chilanka', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .app-logo {
+      color: white;
+      font-size: 28px;
+      font-family: 'Chilanka', cursive;
+    }
   }
 }
+
