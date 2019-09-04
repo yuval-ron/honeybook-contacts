@@ -9,7 +9,8 @@ import './App.scss';
 
 class App extends Component {
   state = {
-    contacts: null
+    filteredContacts: null,
+    searchQuery: ''
   }
 
   componentDidMount() {
@@ -17,22 +18,34 @@ class App extends Component {
     // The reason we are not using Redux and Thunk is becouse it is a small project,
     // And for now it is out of scope.
     fetchContacts().then((contacts) => {
-      this.setState({contacts})
+      this.contacts = contacts
+      this.setState({filteredContacts: contacts})
     })
   }
 
+  handleSearchQueryChange = (e) => {
+    const {target: {value}} = e
+
+    const filteredContacts = this.contacts.filter(contact => contact.name.toLowerCase().includes(value))
+
+    this.setState({searchQuery: value, filteredContacts})
+  }
+
   render() {
-    const {contacts} = this.state
+    const {filteredContacts, searchQuery} = this.state
 
     return (
       <div className="App">
         <Navbar />
-        {contacts ?
-          <ContactList contacts={contacts} />
+        {filteredContacts ?
+          <ContactList contacts={filteredContacts} />
           :
           <Loading />
         }
-        <Search />
+        <Search
+          searchQuery={searchQuery}
+          handleSearchQueryChange={this.handleSearchQueryChange}
+        />
       </div>
     );
   }

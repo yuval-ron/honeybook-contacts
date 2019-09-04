@@ -14,12 +14,18 @@ export default class Search extends Component {
   }
 
   render() {
+    const {searchQuery, handleSearchQueryChange} = this.props
     const {isInputVisible} = this.state
 
     return (
       <div id="search-container">
         <div className={`input-container ${isInputVisible && 'visible'}`}>
-          <input type="text" placeholder="Enter your search" />
+          <input
+            type="text"
+            placeholder="Enter your search"
+            onChange={handleSearchQueryChange}
+            value={searchQuery}
+          />
         </div>
         <div className="search-button" onClick={this.handleButtonClick}>
           <img className="icon" alt="" src="search-icon.svg" />

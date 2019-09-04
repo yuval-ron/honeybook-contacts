@@ -6,7 +6,6 @@ import './ContactList.scss'
 export default class ContactList extends Component {
   render() {
     const {contacts} = this.props
-    console.log('ContactList.js contacts', contacts)
 
     return (
       <div id="contacts-list-container">
