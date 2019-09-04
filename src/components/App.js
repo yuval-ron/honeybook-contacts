@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {debounce} from 'lodash'
 
 import Navbar from './Navbar'
 import Loading from './Loading'
@@ -23,12 +24,17 @@ class App extends Component {
     })
   }
 
+  debouncedFilterContacts = debounce((value) => {
+    const filteredContacts = this.contacts.filter(contact => contact.name.toLowerCase().includes(value.toLowerCase()))
+
+    this.setState({filteredContacts})
+  }, 500)
+
   handleSearchQueryChange = (e) => {
     const {target: {value}} = e
 
-    const filteredContacts = this.contacts.filter(contact => contact.name.toLowerCase().includes(value))
-
-    this.setState({searchQuery: value, filteredContacts})
+    this.setState({searchQuery: value})
+    this.debouncedFilterContacts(value)
   }
 
   render() {
