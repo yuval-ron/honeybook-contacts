@@ -1,3 +1,6 @@
+$moreDetailsHeight: 36px;
+$moreDetailsMarginTop: 20px;
+
 #contacts-list-container {
   display: flex;
   justify-content: center;
@@ -10,8 +13,8 @@
     width: 300px;
     height: 300px;
     margin: 10px;
-    background-color: red;
     position: relative;
+    overflow: hidden;
 
     .profile-picture {
       width: 100%;
@@ -31,6 +34,7 @@
       align-items: flex-start;
       padding: 10px;
       padding-top: 35px;
+      transform: translateY($moreDetailsMarginTop + $moreDetailsHeight);
 
       .icon {
         $iconDimentions: 50px;
@@ -46,6 +50,7 @@
 
       .fullname {
         font-weight: bold;
+        margin-bottom: 10px;
       }
 
       .job-details {
@@ -63,6 +68,11 @@
           height: 70%;
           border-right: 1px solid $color;
         }
+      }
+
+      .more-details {
+        margin-top: $moreDetailsMarginTop;
+        height: $moreDetailsHeight;
       }
     }
   }

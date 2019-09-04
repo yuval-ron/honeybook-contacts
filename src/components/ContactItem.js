@@ -28,6 +28,11 @@ export default class ContactItem extends Component {
             {job && company_name && <div className="separator"></div>}
             <div className="company-name">@{company_name}</div>
           </div>
+
+          <div className="more-details">
+            <div className="phone">{phone}</div>
+            <div className="email">{email}</div>
+          </div>
         </div>
       </div>
     )
